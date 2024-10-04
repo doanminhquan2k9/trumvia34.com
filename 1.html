@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập Thực Hành</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            color: #007bff;
+            margin-top: 20px;
+            font-size: 2em;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+        p, li {
+            color: #555;
+            font-size: 1.1em;
+            margin: 5px 0;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #888;
+        }
+        .highlight {
+            background-color: #e9f7ff;
+            border-left: 5px solid #007bff;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+        .icon {
+            font-size: 1.5em;
+            color: #007bff;
+            margin-right: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .card {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bài Tập Thực Hành</h1>
+            <p>Hướng dẫn từng bước để cài đặt và sử dụng phần mềm.</p>
+        </header>
+
+        <main>
+            <h2><i class="fas fa-chrome icon"></i>Cài đặt Trình duyệt Chrome</h2>
+            <div class="card">
+                <p><strong>Cài đặt Chrome:</strong></p>
+                <ol>
+                    <li>Truy cập vào trang web <a href="https://www.google.com/chrome/" target="_blank">Chrome Download</a>.</li>
+                    <li>Nhấn nút "Download Chrome" và làm theo hướng dẫn để cài đặt.</li>
+                </ol>
+                <p><strong>Thêm module mở rộng:</strong></p>
+                <ol>
+                    <li>Mở Chrome và truy cập vào <a href="https://chrome.google.com/webstore" target="_blank">Chrome Web Store</a>.</li>
+                    <li>Tìm kiếm các extension bạn cần, nhấn "Thêm vào Chrome" và làm theo hướng dẫn.</li>
+                </ol>
+            </div>
+
+            <h2><i class="fas fa-file-archive icon"></i>Tải và cài đặt phần mềm 7ZIP</h2>
+            <div class="card">
+                <p><strong>Cài đặt 7ZIP:</strong></p>
+                <ol>
+                    <li>Truy cập vào trang web <a href="https://www.7-zip.org/" target="_blank">7-Zip Download</a>.</li>
+                    <li>Tải xuống và cài đặt phiên bản phù hợp với hệ điều hành của bạn.</li>
+                </ol>
+                <p><strong>Thực hiện các bài tập với 7ZIP:</strong></p>
+                <ol>
+                    <li><strong>Bài 1:</strong> Tạo 3 thư mục và tệp zip.
+                        <ul>
+                            <li>Mở File Explorer, điều hướng đến nơi bạn muốn tạo thư mục.</li>
+                            <li>Tạo ba thư mục với tên “TINHOC”, “LAPTRINH” và “ONTAP”.</li>
+                            <li>Tạo hình ảnh logo ICTU và lưu lại, sau đó sử dụng 7ZIP để nén cả ba thư mục lại thành <em>TINHOCDAICUONG.zip</em>.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Bài 2:</strong> Giải nén tệp ra Desktop.
+                        <ul>
+                            <li>Nhấp chuột phải vào <em>TINHOCDAICUONG.zip</em>, chọn "7-Zip" > "Extract to Desktop".</li>
+                        </ul>
+                    </li>
+                    <li><strong>Bài 3:</strong> Giải nén tệp ra thư mục hiện tại.
+                        <ul>
+                            <li>Nhấp chuột phải vào <em>TINHOCDAICUONG.zip</em>, chọn "7-Zip" > "Extract Here".</li>
+                        </ul>
+                    </li>
+                    <li><strong>Bài 4:</strong> Kiểm tra tính toàn vẹn của tệp nén.
+                        <ul>
+                            <li>Nhấp chuột phải vào <em>TINHOCDAICUONG.zip</em>, chọn "7-Zip" > "Test archive".</li>
+                        </ul>
+                    </li>
+                    <li><strong>Bài 5:</strong> Đặt mật khẩu cho tệp nén.
+                        <ul>
+                            <li>Nhấp chuột phải vào thư mục cần nén, chọn "7-Zip" > "Add to archive".</li>
+                            <li>Trong cửa sổ xuất hiện, nhập mật khẩu <em>Cntt@2023</em> vào ô "Encryption", rồi nhấn OK.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <h2><i class="fas fa-file-pdf icon"></i>Tải và cài đặt phần mềm Foxit Reader</h2>
+            <div class="card">
+                <p><strong>Cài đặt Foxit Reader:</strong></p>
+                <ol>
+                    <li>Truy cập vào trang web <a href="https://www.foxitsoftware.com/pdf-reader/" target="_blank">Foxit Reader Download</a>.</li>
+                    <li>Tải và cài đặt phần mềm.</li>
+                </ol>
+                <p><strong>Thực hiện các bài tập với Foxit Reader:</strong></p>
+                <ol>
+                    <li><strong>Tạo một snapshot:</strong>
+                        <ul>
+                            <li>Mở Foxit Reader, tải một tệp PDF.</li>
+                            <li>Sử dụng công cụ Snapshot để chụp lại một phần của tài liệu.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Tạo một Note:</strong>
+                        <ul>
+                            <li>Chọn công cụ Note từ thanh công cụ.</li>
+                            <li>Nhấp vào vị trí bạn muốn thêm note và nhập nội dung “ICTU - Vì yêu mà đến”.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Highlight một nội dung:</strong>
+                        <ul>
+                            <li>Chọn công cụ Highlight, sau đó tô màu vào đoạn văn bản bạn muốn nhấn mạnh.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Lưu tệp PDF mới:</strong>
+                        <ul>
+                            <li>Chọn "File" > "Save As".</li>
+                            <li>Đặt tên cho tệp là “ICTU.pdf” và lưu lại.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 ICTU.
