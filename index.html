@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tải Video TikTok</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+        }
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Tải Video TikTok Không Có Logo</h1>
+<input type="text" id="tiktokUrl" placeholder="Nhập URL video TikTok">
+<button onclick="downloadVideo()">Tải Video</button>
+
+<div id="result"></div>
+
+<script>
+    async function downloadVideo() {
+        const url = document.getElementById('tiktokUrl').value;
+        const response = await fetch('/download', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ url })
+        });
+
+        if (response.ok) {
+            const blob = await response.blob();
+            const downloadUrl = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = downloadUrl;
+            a.download = 'video.mp4';
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            URL.revokeObjectURL(downloadUrl);
+            document.getElementById('result').innerText = 'Đang tải video...';
+        } else {
+            const error = await response.json();
+            document.getElementById('result').innerText = error.error;
+        }
+    }
+</script>
+
+</body>
+</html>
 
